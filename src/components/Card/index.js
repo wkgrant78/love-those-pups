@@ -7,7 +7,7 @@ function Card(props) {
         <div
             className="card"
             style={{
-                backgroundImage: props.image ? 'url(${props.images})' : "none"
+                backgroundImage: props.image ? `url(${props.image})` : "none"
             }}
         >
             {!props.image && <i className="fa fa-spinner" aria-hidden="true" />}
