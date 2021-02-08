@@ -6,7 +6,7 @@ import "./style.css";
 
 function Navbar () {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="mr-auto">
             <Link className="navbar-navbar" to="/">
                 Love Those Pups
             </Link>
@@ -27,15 +27,23 @@ function Navbar () {
                     <li className="nav-item">
                         <Link 
                             to="/discover"
-                            className={window.location.pathname === "./discover" ? "nav-link active" : "nav-link"}
+                            className={
+                                window.location.pathname === "/discover" 
+                                    ? "nav-link active" 
+                                    : "nav-link"
+                            }
                         >
                             Discover
                         </Link>
                     </li>
                     <li className="nav-link">
                         <Link
-                        to="/search"
-                        className={window.location.pathname === "/search" ? "nav-link active" : "nav-link"}
+                            to="/search"
+                            className={
+                                window.location.pathname === "/search" 
+                                ? "nav-link active" 
+                                : "nav-link"
+                            }
                         >
                             Search
                         </Link>
